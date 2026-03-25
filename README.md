@@ -321,3 +321,47 @@ If a bizarre grapheme performs better, it is preferred.
 
 ```text
 /swɛt sɔŋ knixt gnat ʍeːl wɔːrd rɛːd rɔːtə faːdər θaŋk/
+```
+
+## Example Neo-CMEPA-style output
+
+```text
+сwэт сoң k'níkht g'nаt hwé'l ρwòrd ραιd ρò'tă fα'dăρ θаңk
+```
+
+Exact output may vary depending on approximation decisions and syllabification behavior in the current script version.
+
+---
+
+# Usage
+
+Open the notebook in Colab, paste IPA into the input cell, and run it.
+
+The notebook will:
+
+1. convert the input into Neo-CMEPA
+2. print the result
+3. save the result to `neo_cmepa_output.txt`
+4. print warnings for approximations or unsupported IPA
+
+---
+
+# Scope
+
+Neo-CMEPA 2.1 is primarily tuned for:
+
+- Middle English-oriented pronunciation work
+- lyric preparation for TTS / singing models
+- IPA cleanup into a more behaviorally reliable orthography
+
+It may also be useful more broadly, but it is **not** intended as a universal phonetic standard.
+
+---
+
+# Final Principle
+
+Neo-CMEPA is built on one practical belief:
+
+> **A symbol is good if the model sings it correctly.**
+
+Everything else is secondary.
